@@ -29,7 +29,7 @@ export default class Hamburger extends Component {
             }).start();
             Animated.spring(this.middleBarOpacity, {
                 toValue: 0,
-                duration: 30
+                duration: 120
             }).start();
         } else {
             this.setState({
@@ -49,7 +49,7 @@ export default class Hamburger extends Component {
             }).start();
             Animated.timing(this.middleBarOpacity, {
                 toValue: 1,
-                duration: 600
+                duration: 2400
             }).start();
         }
     }
